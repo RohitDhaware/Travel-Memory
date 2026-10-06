@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="QrpxTQ0au9pt9CwYI5qh">
+    <mxGraphModel dx="1622" dy="895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="L5KuUXzVBN7c0tqyRkcl-9" edge="1" parent="1" source="L5KuUXzVBN7c0tqyRkcl-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="L5KuUXzVBN7c0tqyRkcl-22" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="424.9999999999998" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L5KuUXzVBN7c0tqyRkcl-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Application Load Balancer" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="L5KuUXzVBN7c0tqyRkcl-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="EC2 (instance1&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Nginx :80&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;React Frontend&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Node Backend:3001&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="150" x="140" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="L5KuUXzVBN7c0tqyRkcl-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="MongoDB Atlas" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="L5KuUXzVBN7c0tqyRkcl-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="424.9999999999998" y="140" as="sourcePoint" />
+            <mxPoint x="425" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L5KuUXzVBN7c0tqyRkcl-14" edge="1" parent="1" source="L5KuUXzVBN7c0tqyRkcl-22" style="endArrow=classic;html=1;rounded=0;exitX=0.328;exitY=1.097;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="390" as="sourcePoint" />
+            <mxPoint x="290" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L5KuUXzVBN7c0tqyRkcl-15" edge="1" parent="1" source="L5KuUXzVBN7c0tqyRkcl-22" style="endArrow=classic;html=1;rounded=0;exitX=0.646;exitY=1.112;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="410" as="sourcePoint" />
+            <mxPoint x="560" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L5KuUXzVBN7c0tqyRkcl-19" edge="1" parent="1" source="L5KuUXzVBN7c0tqyRkcl-5" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="420" as="sourcePoint" />
+            <mxPoint x="410" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L5KuUXzVBN7c0tqyRkcl-20" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="610" y="590" as="sourcePoint" />
+            <mxPoint x="440" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L5KuUXzVBN7c0tqyRkcl-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Internet" vertex="1">
+          <mxGeometry height="30" width="60" x="395" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="L5KuUXzVBN7c0tqyRkcl-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Target Group" vertex="1">
+          <mxGeometry height="30" width="100" x="375" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="L5KuUXzVBN7c0tqyRkcl-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="EC2 (instance2&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Nginx :80&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;React Frontend&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Node Backend:3001&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="150" x="560" y="510" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
