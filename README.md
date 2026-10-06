@@ -379,6 +379,8 @@ MongoDB Atlas
 
 The deployed application was successfully tested through the ALB endpoint, including creating a new travel experience and confirming that the data remained available after refreshing the application.
 
+# ALB Link: http://travelmemoryloadbalancer-130778190.us-east-1.elb.amazonaws.com/
+
 ---
 
 # Author
