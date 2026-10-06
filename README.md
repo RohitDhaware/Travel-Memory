@@ -37,36 +37,36 @@ The final deployment consists of two EC2 instances behind a single Application L
                       /            \
                      v              v
               EC2 Instance 1   EC2 Instance 2
-                 |                  |
-              Nginx :80          Nginx :80
-                 |                  |
-           React :3000          React :3000
-                 |                  |
-          Node.js :3001       Node.js :3001
-                 \                  /
-                  \                /
-                   \              /
-                    v            v
-                    MongoDB Atlas
+                  |                 |
+              Nginx :80         Nginx :80
+                  |                 |
+            React :3000        React :3000
+                  |                 |
+          Node.js :3001      Node.js :3001
+                  \                 /
+                   \               /
+                    \             /
+                     v           v
+                       MongoDB Atlas
 ```
 
 ### Request Flow
 
 ```text
 Browser
-   ↓
+  ↓
 Application Load Balancer :80
-   ↓
+  ↓
 Target Group
-   ↓
+  ↓
 Healthy EC2 Instance
-   ↓
+  ↓
 Nginx :80
-   ↓
+  ↓
 React Frontend :3000
-   ↓
+  ↓
 Node.js Backend :3001
-   ↓
+  ↓
 MongoDB Atlas
 ```
 
@@ -147,8 +147,6 @@ Node.js    → :3001
 
 ### Nginx / Application Verification
 
-![Nginx Configuration](images/image5.png)
-
 ---
 
 # 5. Frontend Deployment
@@ -161,7 +159,7 @@ The React application runs on port **3000**.
 
 ### Frontend Application
 
-![Frontend Application](images/image6.png)
+![Frontend Application](images/image5.png)
 
 ---
 
@@ -180,7 +178,7 @@ The following functionality was verified:
 
 ### Application Test
 
-![Application Verification](images/image7.png)
+![Application Verification](images/image6.png)
 
 ---
 
@@ -192,7 +190,7 @@ The AMI preserves the validated application server configuration and was used to
 
 ### AMI
 
-![AMI](images/image8.png)
+![AMI](images/image7.png)
 
 ---
 
@@ -204,7 +202,7 @@ This provides two application servers with the same deployment configuration.
 
 ### Second EC2 Instance
 
-![Second EC2 Instance](images/image9.png)
+![Second EC2 Instance](images/image8.png)
 
 ---
 
@@ -218,7 +216,7 @@ The final configuration contains two healthy targets.
 
 ### Target Group – Healthy Targets
 
-![Target Group](images/image10.png)
+![Target Group](images/image9.png)
 
 ---
 
@@ -235,7 +233,7 @@ The ALB:
 
 ### Application Load Balancer
 
-![Application Load Balancer](images/image11.png)
+![Application Load Balancer](images/image10.png)
 
 ---
 
@@ -255,7 +253,7 @@ The complete application flow was successfully verified.
 
 ### Final Application
 
-![Final Application Test](images/image12.png)
+![Final Application Test](images/image11.png)
 
 ---
 
@@ -311,7 +309,7 @@ TravelMemory/
 │   ├── image2.png
 │   ├── image3.png
 │   ├── ...
-│   └── image12.png
+│   └── image11.png
 │
 ├── .gitignore
 └── README.md
@@ -363,19 +361,19 @@ The final architecture is:
 
 ```text
 Internet
-   ↓
+  ↓
 Application Load Balancer
-   ↓
+  ↓
 Target Group
-   ↓
+  ↓
 EC2 Instance 1 + EC2 Instance 2
-   ↓
+  ↓
 Nginx :80
-   ↓
+  ↓
 React :3000
-   ↓
+  ↓
 Node.js :3001
-   ↓
+  ↓
 MongoDB Atlas
 ```
 
