@@ -3,5 +3,5 @@ node_modules/
 *.pem
 build/
 dist/
-READMI.md
+*.md
 screenshots/
